@@ -50,7 +50,7 @@ def classifier(mat, model):
         pred = model.predict(mat)
         
     elif model=='GBC':
-        model = pickle.load(open("classification_model_3.pkl", "rb"))
+        model = pickle.load(open("experiments/gbc.pkl", "rb"))
         pred = model.predict(mat)
         
     else:
