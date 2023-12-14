@@ -42,7 +42,7 @@ def classifier(mat, model):
         pred : list of predicted labels
     '''
     if model=='SVM':
-        model = pickle.load(open("classification_model_1.pkl", "rb"))
+        model = pickle.load(open("experiments/svm.pkl", "rb"))
         pred = model.predict(mat)
         
     elif model=='RF':
